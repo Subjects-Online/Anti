@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ahmed Tamer — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">AT<span class="dot">.</span></div>
+    <ul class="nav__links">
+      <li><a href="#about" class="nav-link" data-text="About">About</a></li>
+      <li><a href="#skills" class="nav-link" data-text="Skills">Skills</a></li>
+      <li><a href="#projects" class="nav-link" data-text="Work">Work</a></li>
+      <li><a href="#contact" class="nav-link" data-text="Contact">Contact</a></li>
+    </ul>
+    <div class="nav__cta">
+      <a href="#contact" class="btn-nav magnetic">Hire Me</a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <canvas id="hero-canvas"></canvas>
+
+    <div class="hero__content">
+      <div class="hero__label">
+        <span class="label-line"></span>
+        <span class="label-text">Available for work · 2026</span>
+      </div>
+
+      <h1 class="hero__title">
+        <span class="line-wrap"><span class="line">Crafting Digital</span></span>
+        <span class="line-wrap"><span class="line">Experiences That</span></span>
+        <span class="line-wrap gradient-text"><span class="line">Move You.</span></span>
+      </h1>
+
+      <p class="hero__sub">
+        I'm a <strong>Creative Developer</strong> building immersive web experiences with physics-based animations, 3D visuals, and pixel-perfect design.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#projects" class="btn-primary magnetic">
+          <span>View Work</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#about" class="btn-ghost magnetic">About Me</a>
+      </div>
+
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__num" data-target="50">0</span><span class="stat__plus">+</span>
+          <span class="stat__label">Projects Done</span>
+        </div>
+        <div class="stat__div"></div>
+        <div class="stat">
+          <span class="stat__num" data-target="5">0</span><span class="stat__plus">yrs</span>
+          <span class="stat__label">Experience</span>
+        </div>
+        <div class="stat__div"></div>
+        <div class="stat">
+          <span class="stat__num" data-target="30">0</span><span class="stat__plus">+</span>
+          <span class="stat__label">Happy Clients</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- MARQUEE STRIP -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-inner">
+        <span>GSAP</span><span class="dot-sep">✦</span>
+        <span>THREE.JS</span><span class="dot-sep">✦</span>
+        <span>REACT</span><span class="dot-sep">✦</span>
+        <span>NEXT.JS</span><span class="dot-sep">✦</span>
+        <span>WEBGL</span><span class="dot-sep">✦</span>
+        <span>NODE.JS</span><span class="dot-sep">✦</span>
+        <span>UI/UX DESIGN</span><span class="dot-sep">✦</span>
+        <span>MOTION DESIGN</span><span class="dot-sep">✦</span>
+        <span>GSAP</span><span class="dot-sep">✦</span>
+        <span>THREE.JS</span><span class="dot-sep">✦</span>
+        <span>REACT</span><span class="dot-sep">✦</span>
+        <span>NEXT.JS</span><span class="dot-sep">✦</span>
+        <span>WEBGL</span><span class="dot-sep">✦</span>
+        <span>NODE.JS</span><span class="dot-sep">✦</span>
+        <span>UI/UX DESIGN</span><span class="dot-sep">✦</span>
+        <span>MOTION DESIGN</span><span class="dot-sep">✦</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-tag reveal-up">About Me</div>
+      <div class="about__grid">
+        <div class="about__left">
+          <div class="about__image-wrap reveal-scale">
+            <div class="about__image-bg"></div>
+            <div class="about__image">
+              <div class="about__initials">AT</div>
+              <div class="about__glow"></div>
+            </div>
+            <div class="about__badge">
+              <svg viewBox="0 0 100 100"><path id="circle-text" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"/><text><textPath href="#circle-text">DEVELOPER · DESIGNER · CREATOR · </textPath></text></svg>
+            </div>
+          </div>
+        </div>
+        <div class="about__right">
+          <h2 class="about__title split-text">I build things that live on the internet.</h2>
+          <p class="about__desc reveal-up">Passionate about creating digital experiences that blend creativity with cutting-edge technology. From pixel-perfect interfaces to physics-based animations, every project is a chance to push boundaries.</p>
+          <p class="about__desc reveal-up">When I'm not coding, you'll find me exploring creative coding, generative art, and the intersection of design and technology.</p>
+          <div class="about__items reveal-up">
+            <div class="about__item">
+              <div class="about__icon">⚡</div>
+              <div>
+                <strong>Fast & Performant</strong>
+                <span>60fps animations everywhere</span>
+              </div>
+            </div>
+            <div class="about__item">
+              <div class="about__icon">🎨</div>
+              <div>
+                <strong>Design-First</strong>
+                <span>Pixel-perfect implementation</span>
+              </div>
+            </div>
+            <div class="about__item">
+              <div class="about__icon">🚀</div>
+              <div>
+                <strong>Modern Stack</strong>
+                <span>Latest web technologies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-tag reveal-up">Tech Stack</div>
+      <h2 class="section-title split-text">Tools & Technologies</h2>
+      <div class="skills__grid">
+        <div class="skill-card magnetic" data-skill="95">
+          <div class="skill-card__icon">⚛️</div>
+          <div class="skill-card__name">React / Next.js</div>
+          <div class="skill-card__bar"><div class="skill-card__fill" data-width="95"></div></div>
+          <div class="skill-card__pct">95%</div>
+        </div>
+        <div class="skill-card magnetic" data-skill="90">
+          <div class="skill-card__icon">🎬</div>
+          <div class="skill-card__name">GSAP / Motion</div>
+          <div class="skill-card__bar"><div class="skill-card__fill" data-width="90"></div></div>
+          <div class="skill-card__pct">90%</div>
+        </div>
+        <div class="skill-card magnetic" data-skill="85">
+          <div class="skill-card__icon">🌐</div>
+          <div class="skill-card__name">Three.js / WebGL</div>
+          <div class="skill-card__bar"><div class="skill-card__fill" data-width="85"></div></div>
+          <div class="skill-card__pct">85%</div>
+        </div>
+        <div class="skill-card magnetic" data-skill="88">
+          <div class="skill-card__icon">🟨</div>
+          <div class="skill-card__name">JavaScript / TS</div>
+          <div class="skill-card__bar"><div class="skill-card__fill" data-width="88"></div></div>
+          <div class="skill-card__pct">88%</div>
+        </div>
+        <div class="skill-card magnetic" data-skill="80">
+          <div class="skill-card__icon">🎨</div>
+          <div class="skill-card__name">UI/UX Design</div>
+          <div class="skill-card__bar"><div class="skill-card__fill" data-width="80"></div></div>
+          <div class="skill-card__pct">80%</div>
+        </div>
+        <div class="skill-card magnetic" data-skill="82">
+          <div class="skill-card__icon">⚙️</div>
+          <div class="skill-card__name">Node.js / APIs</div>
+          <div class="skill-card__bar"><div class="skill-card__fill" data-width="82"></div></div>
+          <div class="skill-card__pct">82%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-tag reveal-up">Selected Work</div>
+      <h2 class="section-title split-text">Projects That Hit Different</h2>
+    </div>
+    <div class="projects__horizontal" id="projects-horizontal">
+      <div class="projects__track">
+
+        <div class="project-card magnetic">
+          <div class="project-card__num">01</div>
+          <div class="project-card__img" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+            <div class="project-card__overlay">
+              <span>View Project →</span>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <h3>3D Product Showcase</h3>
+            <p>Interactive 3D product viewer with physics-based interactions and WebGL shaders.</p>
+            <div class="project-card__tags">
+              <span>Three.js</span><span>GLSL</span><span>React</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card magnetic">
+          <div class="project-card__num">02</div>
+          <div class="project-card__img" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+            <div class="project-card__overlay">
+              <span>View Project →</span>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <h3>Motion Design Studio</h3>
+            <p>Award-winning agency website with scroll-hijacking and immersive transitions.</p>
+            <div class="project-card__tags">
+              <span>GSAP</span><span>Lenis</span><span>Next.js</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card magnetic">
+          <div class="project-card__num">03</div>
+          <div class="project-card__img" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+            <div class="project-card__overlay">
+              <span>View Project →</span>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <h3>AI Dashboard</h3>
+            <p>Real-time data visualization platform with animated charts and live updates.</p>
+            <div class="project-card__tags">
+              <span>D3.js</span><span>WebSocket</span><span>TypeScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card magnetic">
+          <div class="project-card__num">04</div>
+          <div class="project-card__img" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">
+            <div class="project-card__overlay">
+              <span>View Project →</span>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <h3>Generative Art NFT</h3>
+            <p>Procedurally generated artwork created with canvas API and algorithmic design.</p>
+            <div class="project-card__tags">
+              <span>Canvas</span><span>P5.js</span><span>Web3</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card magnetic">
+          <div class="project-card__num">05</div>
+          <div class="project-card__img" style="background: linear-gradient(135deg, #fa709a, #fee140);">
+            <div class="project-card__overlay">
+              <span>View Project →</span>
+            </div>
+          </div>
+          <div class="project-card__content">
+            <h3>E-commerce Experience</h3>
+            <p>Luxury e-commerce with page transitions, magnetic interactions, and micro-animations.</p>
+            <div class="project-card__tags">
+              <span>Next.js</span><span>Framer Motion</span><span>Stripe</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__inner">
+        <div class="section-tag reveal-up">Get In Touch</div>
+        <h2 class="contact__title split-text">Let's Build Something <span class="gradient-text">Extraordinary.</span></h2>
+        <p class="contact__sub reveal-up">Have a project in mind? I'd love to hear about it. Let's create something amazing together.</p>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal-up">
+            <div class="contact__detail">
+              <span class="contact__icon">📧</span>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:hello@ahmedtamer.dev">hello@ahmedtamer.dev</a>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <span class="contact__icon">📍</span>
+              <div>
+                <strong>Location</strong>
+                <span>Cairo, Egypt 🇪🇬</span>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <span class="contact__icon">⏰</span>
+              <div>
+                <strong>Availability</strong>
+                <span class="available-badge">● Available Now</span>
+              </div>
+            </div>
+            <div class="contact__socials">
+              <a href="#" class="social-link magnetic">GitHub</a>
+              <a href="#" class="social-link magnetic">LinkedIn</a>
+              <a href="#" class="social-link magnetic">Dribbble</a>
+              <a href="#" class="social-link magnetic">Twitter</a>
+            </div>
+          </div>
+
+          <form class="contact__form reveal-up" id="contact-form">
+            <div class="form-group">
+              <input type="text" id="name" placeholder=" " required/>
+              <label for="name">Your Name</label>
+              <div class="form-line"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder=" " required/>
+              <label for="email">Email Address</label>
+              <div class="form-line"></div>
+            </div>
+            <div class="form-group">
+              <textarea id="message" rows="4" placeholder=" " required></textarea>
+              <label for="message">Tell me about your project</label>
+              <div class="form-line"></div>
+            </div>
+            <button type="submit" class="btn-primary magnetic">
+              <span>Send Message</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__logo">AT<span class="dot">.</span></div>
+        <div class="footer__copy">© 2026 Ahmed Tamer. Built with passion & code.</div>
+      </div>
+      <div class="footer__line"></div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <!-- Three.js -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <!-- SplitType -->
+  <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+  <!-- Main JS -->
+  <script src="main.js"></script>
+</body>
+</html>
